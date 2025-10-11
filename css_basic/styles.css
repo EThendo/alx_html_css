@@ -76,14 +76,14 @@ aside {
 }
 aside p {
 	border: 1px solid #bbb;
-	background: #ddd;
+	background: #93aab1;
 	color: black;
 }
 footer a {
 	color: rgba(0, 0, 0, 0.8);
 }
 a {
-	color: #F80002;
+	color: #cc4b6b;
 }
 
 
@@ -208,6 +208,7 @@ body {
   display: flex;
   flex-direction: column; /* header, main, footer stacked vertically */
   height: 100vh;
+  background-color: rgba(172, 180, 136, 0);
 }
 
 main {
