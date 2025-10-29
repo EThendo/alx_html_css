@@ -1,0 +1,2 @@
+This project is part of the ALX Front-End Web Development curriculum, focused on building a complete and responsive web page from scratch, without using any external CSS frameworks or JavaScript.
+The goal is to replicate the Headphones landing page design provided by Nicolas Philippot (UI/UX Designer) on Figma  applying all concepts learned in HTML, CSS, Accessibility, and Responsive Design.
