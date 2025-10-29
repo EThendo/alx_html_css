@@ -1,0 +1,197 @@
+/* === GLOBAL STYLES === */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  background-color: #fff;
+}
+
+/* === HERO SECTION === */
+.hero {
+  background: url("background.png") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* === NAVBAR === */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+/* === HERO CONTENT === */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #FF6565;
+  color: white;
+  text-decoration: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff8585;
+}
+
+.hero-subtext {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* === "WHAT WE DO" SECTION === */
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('icons/holberton_school-icon.woff2') format('woff2'),
+       url('icons/holberton_school-icon.woff') format('woff'),
+       url('icons/holberton_school-icon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  font-family: 'holberton_school-icon' !important;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  font-size: 60px;
+  color: #FF6565;
+}
+
+/* Section styling */
+#what-we-do {
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#what-we-do h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#what-we-do p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.what-we-do-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.what-item {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.what-item h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.what-item p {
+  color: #666;
+  font-size: 15px;
+}
+
+/* === RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .what-we-do-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-content h1 {
+    font-size: 24px;
+  }
+}
