@@ -1,0 +1,215 @@
+/* === GLOBAL === */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+}
+
+/* === HERO === */
+.hero {
+  background: url("background.png") no-repeat center center/cover;
+  height: 100vh;
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding-bottom: 60px;
+}
+
+.hero-content h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #FF6565;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* === WHAT WE DO === */
+@font-face {
+  font-family: 'holberton_school-icon';
+  src: url('icons/holberton_school-icon.woff2') format('woff2'),
+       url('icons/holberton_school-icon.woff') format('woff'),
+       url('icons/holberton_school-icon.ttf') format('truetype');
+}
+
+[class^="holberton_school-icon-"], [class*=" holberton_school-icon-"] {
+  font-family: 'holberton_school-icon' !important;
+  font-size: 60px;
+  color: #FF6565;
+  display: inline-block;
+}
+
+#what-we-do {
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+  padding: 0 20px;
+}
+
+#what-we-do h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+#what-we-do p {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+.what-we-do-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.what-item {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 20px;
+}
+
+.what-item h3 {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.what-item p {
+  color: #666;
+}
+
+/* === OUR RESULTS === */
+#our-results {
+  position: relative;
+  background: url("images/results-bg.png") no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.results-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.results-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.results-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.results-content p {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 60px;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.result {
+  text-align: center;
+}
+
+.pentagon {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid #eb2626;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0 auto 15px;
+  background: rgba(255, 101, 101, 0.1);
+}
+
+/* === responsives === */
+@media (max-width: 768px) {
+  .results-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .circle {
+    width: 120px;
+    height: 120px;
+    font-size: 22px;
+  }
+}

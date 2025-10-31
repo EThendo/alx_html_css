@@ -1,0 +1,235 @@
+/* Import fonts and base styles */
+/* Base styles */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  background: url('background.png') center/cover no-repeat;
+  position: relative;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.hero-content p {
+  color: #ddd;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+/* Button */
+.btn {
+  background-color: #FF6565;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* WHAT WE DO */
+#what-we-do {
+  max-width: 1000px;
+  margin: 100px auto;
+  text-align: center;
+  color: black;
+}
+
+#what-we-do h2 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#what-we-do p {
+  color: #555;
+}
+
+.what-we-do-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+/* OUR RESULTS */
+#our-results {
+  background: url('background.png') center/cover no-repeat;
+  text-align: center;
+  position: relative;
+  padding: 100px 20px;
+}
+
+.results-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 1;
+}
+
+.results-content {
+  position: relative;
+  z-index: 2;
+}
+
+.results-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 50px;
+}
+
+/* Pentagon Shape */
+.pentagon {
+  position: relative;
+  width: 120px;
+  height: 110px;
+  background: #FF6565;
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.pentagon:hover {
+  transform: scale(1.1);
+}
+
+.pentagon h3 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.pentagon p {
+  margin: 4px 0 0;
+  font-size: 14px;
+}
+
+
+/* CONTACT SECTION */
+#contact {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+.contact-form button {
+  background-color: #FF6565;
+  border: none;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .results-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
